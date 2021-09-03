@@ -22,12 +22,12 @@ def test_xxx():
 	assert blabla is None
 ```
 
-### Boa práticas
+### Boas práticas
 Veja abaixo uma maneira que não acho interessante de testar o programa.
 ```
----------------------------
-Arquivo ->    test_soma.py |
----------------------------
+#---------------------------
+#Arquivo ->    test_soma.py |
+#---------------------------
 
 def soma(a,b):
 	return a+b
@@ -36,22 +36,22 @@ def test_soma():
 	assert soma(1,1) == 3
 	assert type(soma(1,1)) is int
 
------------------------------
-executar no terminal: pytest |
------------------------------
+#-----------------------------
+#executar no terminal: pytest |
+#-----------------------------
 ```
-O modo que eu acho mais limpo de se testar o código, cria um arquivo e um **outro pra teste**
+O modo que eu acho mais limpo de se testar o código, cria um arquivo e um **outro pra teste** e assim realiza o import das funções que deseja testar no arquivo apropriado pra teste.
 ```
--------------------
-Arquivo -> soma.py |
--------------------
+#-------------------
+#Arquivo -> soma.py |
+#-------------------
 
 def soma(a,b):
 	return a+b
 
----------------------------
-Arquivo ->    test_soma.py |
----------------------------
+#---------------------------
+#Arquivo ->    test_soma.py |
+#---------------------------
 from soma import *
 
 def test_soma():
