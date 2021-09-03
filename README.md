@@ -1,6 +1,6 @@
 # Pytest 
 
-Primeiramente o pytest é um Framework e não uma biblioteca, é utilizado para realizar testes.
+Primeiramente o pytest é um Framework e não uma biblioteca, é utilizado para realizar testes no seu código (como o próprio nome já diz)... Ou seja, ele vai avaliar os seus **assert** nas funções/classes python que você deseja testar.
 
 ## Instalação do Pytest
 ```
