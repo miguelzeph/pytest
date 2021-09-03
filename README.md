@@ -58,11 +58,12 @@ def test_soma():
 	assert soma(1,1) == 3
 	assert type(soma(1,1)) is int
 
------------------------------
-executar no terminal: pytest |
------------------------------
+#-----------------------------
+#executar no terminal: pytest |
+#-----------------------------
 ```
 
+[source: Learn Pytest in 60 Minutes : Python Unit Testing Framework](https://www.youtube.com/watch?v=bbp_849-RZ4)
 
 
 
