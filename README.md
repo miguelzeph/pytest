@@ -70,7 +70,7 @@ def test_soma():
 #executar no terminal: pytest -v |
 #-----------------------------
 ```
-[source: Learn Pytest in 60 Minutes : Python Unit Testing Framework](https://www.youtube.com/watch?v=bbp_849-RZ4)
+[source: Learn Pytest in 60 Minutes : Python Unit Testing Framework](https://www.youtube.com/watch?v=bbp_849-RZ4) <br/>
 [source: Pytest Tutorial em Português](https://www.youtube.com/watch?v=eG4oiOE95aM)
 
 # Pytest-cov (COVERAGE)
