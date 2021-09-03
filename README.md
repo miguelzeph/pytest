@@ -74,7 +74,7 @@ def test_soma():
 [source: Pytest Tutorial em Português](https://www.youtube.com/watch?v=eG4oiOE95aM)
 
 # Pytest-cov (COVERAGE)
-Essa é uma **extensão** do framework pytest, funciona da seguinte maneira, enquanto o **pytest** verifica as falhas que ocorreram durante o teste (dando-te uma **%** de FAILED e PASSED), o **pytest-cov** mostra literamente a **cobertura (coverage) realizada pelo teste**... ele te retorna uma porcentagem, mas se você usar o comando **--cov-report=html** você poderá visualizar ainda os locais que não foram passados pelo teste (fica escrito em vermelho missing).
+Essa é uma **extensão** do framework pytest, funciona da seguinte maneira, enquanto o **pytest** verifica as falhas que ocorreram durante o teste (dando-te uma **%** de FAILED e PASSED), o **pytest-cov** mostra literamente a **cobertura (coverage) realizada pelo teste**... ele te retorna uma porcentagem, mas se você usar o comando **--cov-report=html** você poderá visualizar ainda os locais que não foram passados pelo teste (fica escrito em vermelho missing) no escript, basta abrir o **index.html** dentro da pasta html que ele cria na raiz executada.
 
 ## Instalando Extensão Pytest-COV (COVERAGE)
 ```
