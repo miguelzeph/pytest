@@ -2,6 +2,12 @@
 
 Primeiramente o pytest é um Framework e não uma biblioteca, é utilizado para realizar testes.
 
+## Instalação do Pytest
+```
+Instalar o pytest
+pip install pytest
+```
+
 ## Why do we test at all?
 **Trust:** You checked at least some cases if they work. So others can have more trust in the quality of your work and you can also put more trust in it.<br/>
 **Breaking Changes:** For a bigger project, it is sometimes hard to have every part in mind. By writing tests, you make it easier to change something and see if / where things break. This does not only help you but also team members. Including once that are not there yet.<br/>
@@ -24,6 +30,8 @@ def test_xxx():
 
 ### Boas práticas
 Veja abaixo uma maneira que não acho interessante de testar o programa.
+
+obs: execute sempre o **pytest** com verbose (**-v**) 
 ```
 #---------------------------
 #Arquivo ->    test_soma.py |
@@ -37,7 +45,7 @@ def test_soma():
 	assert type(soma(1,1)) is int
 
 #-----------------------------
-#executar no terminal: pytest |
+#executar no terminal: pytest -v |
 #-----------------------------
 ```
 O modo que eu acho mais limpo de se testar o código, cria um arquivo e um **outro pra teste** e assim realiza o import das funções que deseja testar no arquivo apropriado pra teste.
@@ -59,12 +67,31 @@ def test_soma():
 	assert type(soma(1,1)) is int
 
 #-----------------------------
-#executar no terminal: pytest |
+#executar no terminal: pytest -v |
 #-----------------------------
 ```
-
 [source: Learn Pytest in 60 Minutes : Python Unit Testing Framework](https://www.youtube.com/watch?v=bbp_849-RZ4)
+[source: Pytest Tutorial em Português](https://www.youtube.com/watch?v=eG4oiOE95aM)
 
+# Pytest-cov (COVERAGE)
+Essa é uma **extensão** do framework pytest, funciona da seguinte maneira, enquanto o **pytest** verifica as falhas que ocorreram durante o teste (dando-te uma **%** de FAILED e PASSED), o **pytest-cov** mostra literamente a **cobertura (coverage) realizada pelo teste**... ele te retorna uma porcentagem, mas se você usar o comando **--cov-report=html** você poderá visualizar ainda os locais que não foram passados pelo teste (fica escrito em vermelho missing).
 
+## Instalando Extensão Pytest-COV (COVERAGE)
+```
+Instalar extensões do pytest ( pytest-cov)
+pip install pytest-cov
+```
+
+## Como executar
+Execução básica ( --cov=PATH )
+```
+pytest py.test --cov=./ 
+```
+
+Criando uma saída em HTML - **RECOMENDADO** porque assim você pode ver quais linhas não foram verificadas!
+```
+pytest --cov=./ --cov-report=html
+```
+[source: Unit Testing in Python — The Basics](https://medium.com/swlh/unit-testing-in-python-basics-21a9a57418a0)
 
 
